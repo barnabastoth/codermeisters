@@ -1,0 +1,99 @@
+body {
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #FFFFFF;
+    background: url("programming.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 0.6vw;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: #62768C;
+    opacity: 0.1;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+/*::-webkit-scrollbar-button {
+    background: white;
+    height: 200px;
+}*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background: #445363;
+}
+.leftmenu {
+    position: absolute;
+    background-color: #445363;
+    width: 50%;
+    position: fixed;
+    top: 116px;
+    left: 0px;
+    margin: 0 auto;
+    /*border-bottom: 3px solid white;*/
+    background: #62768c;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    border-top: 5px solid #62768C;
+    border-right: 5px solid #62768C;
+    border-left: 5px solid #62768C;
+    opacity: 0.8;
+    border-radius: 10px 10px 0px 0px;
+}
+.leftmenu table {
+    width: 100%;
+}
+.leftmenu table td {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 0.7vw;
+    border-left: 2px solid white;
+}
+.leftmenu table td:first-child{border-left: none;}
+.leftmenu table:Hover {
+    background-color: #62768C;
+    }
+
+.mainlist {
+    position: absolute;
+    top:150px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    opacity: 0.8;
+    border-left: 10px solid #62768C;
+    border-bottom: 10px solid #62768C;
+    /*border-top: 10px solid #62768C;*/
+    border-radius: 0px 0px 0px 10px;
+}
+.mainlist table{
+    background-color: #2e3742;
+    /*background: rgba(204, 204, 204, 0.1);*/
+    width: 100%;
+    height: 100%;
+    /*border-left: 10px solid #62768C;
+    border-bottom: 10px solid #62768C;
+    border-top: 10px solid #62768C;*/
+}
+.mainlist table td {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.mainlist table tb:hover {
+    background-color: white;
+}

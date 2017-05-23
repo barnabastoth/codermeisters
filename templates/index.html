@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  </head>
+  <body>
+      <div class="leftmenu">
+          <form action="/" name="memberselect" method="POST">
+          <table>
+              <tr>
+                  {% for member in member_list %}
+                  <td>{{ member }}</td>
+                  {% endfor %}
+              </tr>
+          </table>
+          </form>
+      </div>
+      <div class="mainlist">
+          <table>
+              {% for item in filelist %}
+              <tr>
+                  <td>{{ item[0] }}</td>
+                  <td>{{ item[1] }}</td>
+                  <td>{{ item[2] }}</td>
+                  <td>{{ item[3] }}</td>
+              </tr>
+              {% endfor %}
+          </table>
+      </div>
+  </body>
+</html>
